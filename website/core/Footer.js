@@ -29,7 +29,7 @@ class Footer extends React.Component {
             </a>
           </div>
           <div>
-            <h5>React Native for Windows Docs</h5>
+            <h5>React Native for Win32 Docs</h5>
             <a href={this.props.config.baseUrl + "docs/getting-started"}>
               Getting Started
             </a>
@@ -49,20 +49,11 @@ class Footer extends React.Component {
           <div>
             <h5>More Resources</h5>
             <a href={this.props.config.baseUrl + "blog/"}>Blog</a>
-            <a href="https://twitter.com/reactwindows" target="_blank">
-              Twitter
-            </a>
             <a
               href="https://github.com/microsoft/react-native-windows"
               target="_blank"
             >
               GitHub
-            </a>
-            <a
-              href="https://github.com/microsoft/react-native-windows-samples/tree/master/samples"
-              target="_blank"
-            >
-              Samples
             </a>
           </div>
         </section>

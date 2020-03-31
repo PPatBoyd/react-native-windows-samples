@@ -4,22 +4,13 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 
 const textContent = {
   introtext: `
-  React Native for Windows has a release train that is tracked on GitHub through the [react-native-windows-releases](https://github.com/microsoft/react-native-windows/releases/) archive.
+  React Native for Win32 has a release train that is tracked on GitHub through the [react-native-windows-releases](https://github.com/microsoft/react-native-windows/releases/) archive.
   When a major release is made available, it will be present here under the **Latest version** section.
 
   Once the release has had significant time to be tested and contributers have addressed as many issues as possible, the release will be upgraded to a **Stable version** and become present in the corosponding section below.
   `,
   latestverison: `
-  The latest and greatest, bleeding edge version release of React Native for Windows will be listed and updated here.
-  `,
-  stablelegacyversions: `
-  The most recent and stable version will be used automatically when the
-  *yarn add rnpm-plugin-windows*
-  command is run on a newly initialized React Native project.
-
-  See the
-  [Consuming React Native for Windows](docs/consuming-rnw)
-  guide for more information.
+  The latest and greatest, bleeding edge version release of React Native for Win32 will be listed and updated here.
   `
 };
 
@@ -58,15 +49,9 @@ class Versions extends React.Component {
           <h1 style={{fontWeight: 'bold'}}>Latest version</h1>
           <MarkdownBlock>{textContent.latestverison}</MarkdownBlock>
           <TableRow versionNumber="MASTER"
-          docLink="https://www.aka.ms/react-native-windows-mac"
+          docLink="https://www.aka.ms/react-native-win32"
           changeLogLink="https://github.com/microsoft/react-native-windows/compare/react-native-windows_v0.60.0-vnext.118...master"
           changeLogText="Commits since 0.60"/>
-          <h1 style={{fontWeight: 'bold'}}>Stable versions</h1>
-          <MarkdownBlock>{textContent.stablelegacyversions}</MarkdownBlock>
-          <TableRow versionNumber="0.60" changeLogLink="https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.60.0-vnext.118"/>
-          <TableRow background="dark" versionNumber="0.59" changeLogLink="https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.59.0-vnext.205"/>
-          <TableRow versionNumber="0.58" changeLogLink="https://github.com/microsoft/react-native-windows/releases/tag/vnext-0.58.0-vnext.176"/>
-          <TableRow background="dark" versionNumber="0.57" changeLogLink="https://github.com/microsoft/react-native-windows/releases/tag/vnext-0.57.0-vnext.31"/>
         </div>
       </Section>
     );
